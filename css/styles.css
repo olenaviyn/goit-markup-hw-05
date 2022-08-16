@@ -197,6 +197,7 @@ body {
   display: inline-flex;
   fill: currentColor;
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-adress {
@@ -379,7 +380,7 @@ body {
 
 /* whoweare */
 .whoweare {
-  background-color: #f5f5f5;
+  background-color: var(--main-white-color);
 }
 
 .whoweare-title {
@@ -558,8 +559,13 @@ body {
 
 .marketing-item:hover .marketing-text {
   transform: translateY(0%);
-  /* box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%); */
+}
+
+.marketing-item:hover,
+.marketing-item:focus {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+  0px 2px 1px rgb(0 0 0 / 20%);
+
 }
 
 .markdiv {
@@ -627,6 +633,7 @@ body {
   color: var(--logo-company-color);
   border: 1px solid var(--logo-company-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-btn {
@@ -696,6 +703,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-join:hover,
@@ -735,6 +743,7 @@ body {
   height: 100%;
   color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
